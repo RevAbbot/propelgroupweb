@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Propel Group | Seamless AI Integration</title>
+    <style>
+        /* CORE VARIABLES - Professional, Deep Tech Palette */
+        :root {
+            --primary-navy: #0f172a;
+            /* Trust, Depth */
+            --accent-blue: #3b82f6;
+            /* Technology, Clarity */
+            --text-dark: #334155;
+            --text-light: #f8fafc;
+            --bg-light: #f1f5f9;
+        }
+
+        /* RESET & BASE STYLES */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #ffffff;
+        }
+
+        /* TYPOGRAPHY */
+        h1,
+        h2,
+        h3 {
+            font-weight: 700;
+            color: var(--primary-navy);
+            letter-spacing: -0.5px;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            max-width: 65ch;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background: #ffffff;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid #e2e8f0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-navy);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--accent-blue);
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            margin-left: 2rem;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-blue);
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background: var(--primary-navy);
+            color: var(--text-light);
+            padding: 6rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            color: var(--text-light);
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            color: #cbd5e1;
+            font-size: 1.25rem;
+            margin: 0 auto 2.5rem auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--accent-blue);
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #2563eb;
+        }
+
+        /* TRUST & EXPERIENCE SECTION */
+        .trust-banner {
+            background: var(--bg-light);
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .trust-stats {
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .stat-item h3 {
+            font-size: 2.5rem;
+            color: var(--accent-blue);
+            margin-bottom: 0.2rem;
+        }
+
+        .stat-item p {
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #64748b;
+        }
+
+        /* SERVICES / UVP SECTION */
+        .services {
+            padding: 5rem 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+        }
+
+        .card {
+            padding: 2rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-blue);
+        }
+
+        .card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        /* CONTACT SECTION */
+        .contact {
+            background: var(--bg-light);
+            padding: 5rem 0;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-col {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-col h3 {
+            margin-bottom: 1rem;
+        }
+
+        .contact-col p {
+            font-size: 0.95rem;
+            color: #64748b;
+            margin-bottom: 1.5rem;
+        }
+
+        .email-link {
+            color: var(--accent-blue);
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--primary-navy);
+            color: #64748b;
+            padding: 2rem 0;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            /* Simplified for mobile demo */
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="container">
+            <div class="logo"><img src="images/PGLogo.png" width="20%" height="20%"></div>
+            <div class="nav-links">
+                <a href="#about">Experience</a>
+                <a href="#services">Methodology</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>We seamlessly adopt AI <br>to your organization.</h1>
+            <p>Stop forcing new workflows. Start propelling your business. <br>Seamless AI integration built
+                on 40 years of technology leadership.</p>
+            <a href="#contact" class="btn">Start the Conversation</a>
+        </div>
+    </section>
+
+    <section class="trust-banner" id="about">
+        <div class="container">
+            <div class="section-header" style="margin-bottom: 1rem;">
+                <p><strong>REAL EXPERIENCE. REAL RESULTS.</strong></p>
+            </div>
+            <div class="trust-stats">
+                <div class="stat-item">
+                    <h3>40+</h3>
+                    <p>Years Tech Leadership</p>
+                </div>
+                <div class="stat-item">
+                    <h3>100s</h3>
+                    <p>Verified AI Tools</p>
+                </div>
+                <div class="stat-item">
+                    <h3>0</h3>
+                    <p>Disruption to Workflow</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>The Propel Framework</h2>
+                <h3>We don't "install AI." We add intelligence where your team already works.</h3>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <h3>Low-Friction Audit</h3>
+                    <p>We identify where your team is stalled—manual data entry, document chaos, or communication
+                        gaps—and design a solution that fits your existing tools.</p>
+                </div>
+                <div class="card">
+                    <h3>Propel Clarity</h3>
+                    <p>Our proprietary knowledge synthesis engine. Turn your SOPs, archived documents and manuals into instant,
+                        interactive answers for your staff.</p>
+                </div>
+                <div class="card">
+                    <h3>Propel Velocity</h3>
+                    <p>Automated structured data processing. We eliminate friction from invoices, forms, spreadsheets and
+                        reports so your team can focus on decisions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Connect with The Propel Group</h2>
+                <h3>Whether you are starting your journey or scaling your success.</h3>
+            </div>
+            <div class="contact-grid">
+
+                <div class="contact-col">
+                    <h3>Inquire About Services</h3>
+                    <p>Ready to seamlessly adopt AI with confidence? Email us describing your current challenges.</p>
+                    <a href="mailto:info@propelgroup.ai" class="email-link">info@propelgroup.ai &rarr;</a>
+                </div>
+
+                <div class="contact-col">
+                    <h3>Client Support</h3>
+                    <p>Existing client? Reach out to our technical team for optimization, questions, or support.</p>
+                    <a href="mailto:support@propelgroup.ai" class="email-link">support@propelgroup.ai &rarr;</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 The Propel Group AI. All Rights Reserved.</p>
+            <p style="margin-top: 0.5rem; opacity: 0.6;">Pleasanton, CA</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
