@@ -145,37 +145,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const animateElements = document.querySelectorAll('.animate-on-scroll');
     animateElements.forEach(el => observer.observe(el));
 
-    // Custom Cursor
-    const cursor = document.getElementById('cursor-follower');
-    if(cursor) {
-        let mouseX = 0, mouseY = 0;
-        let cursorX = 0, cursorY = 0;
-
-        document.addEventListener('mousemove', (e) => {
-            mouseX = e.clientX;
-            mouseY = e.clientY;
-        });
-
-        const animateCursor = () => {
-            // Smooth follow
-            cursorX += (mouseX - cursorX) * 0.1;
-            cursorY += (mouseY - cursorY) * 0.1;
-
-            cursor.style.left = cursorX + 'px';
-            cursor.style.top = cursorY + 'px';
-
-            requestAnimationFrame(animateCursor);
-        };
-        animateCursor();
-
-        // Hover effect
-        const links = document.querySelectorAll('a, button, .pointer');
-        links.forEach(link => {
-            link.addEventListener('mouseenter', () => cursor.classList.add('active'));
-            link.addEventListener('mouseleave', () => cursor.classList.remove('active'));
-        });
-    }
-
     // Mobile nav toggle
     const nav = document.getElementById('main-nav');
     const navToggle = nav && nav.querySelector('.nav-toggle');
