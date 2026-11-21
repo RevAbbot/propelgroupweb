@@ -8,6 +8,21 @@
     <meta name="description"
         content="Propel Group helps growing companies run better: AI consulting that streamlines processes and workflows, and bookkeeping that keeps your finances accurate and current.">
 
+    <link rel="canonical" href="https://propelgroup.ai/">
+
+    <!-- Social / link previews -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Propel Group">
+    <meta property="og:title" content="Propel Group | Business Consulting &amp; Bookkeeping">
+    <meta property="og:description" content="Propel Group helps growing companies run better: AI consulting that streamlines processes and workflows, and bookkeeping that keeps your finances accurate and current.">
+    <meta property="og:url" content="https://propelgroup.ai/">
+    <meta property="og:image" content="https://propelgroup.ai/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Propel Group: Business Consulting &amp; Bookkeeping">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://propelgroup.ai/images/og-image.png">
+
     <!-- Icons -->
     <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -21,10 +36,130 @@
         rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="css/style.css?v=20261118">
+    <link rel="stylesheet" href="css/style.css?v=20261120b">
 
     <!-- Scripts (Defer) -->
     <script src="js/main.js?v=20261118" defer></script>
+    <!-- Structured data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://propelgroup.ai/#organization",
+      "name": "Propel Group",
+      "legalName": "Propel Group, LLC",
+      "url": "https://propelgroup.ai/",
+      "logo": "https://propelgroup.ai/images/PGLogo.png",
+      "email": "info@propelgroup.ai",
+      "slogan": "Forward Together",
+      "description": "Propel Group helps growing companies run better: AI consulting that streamlines processes and workflows, and bookkeeping that keeps your finances accurate and current.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "email": "info@propelgroup.ai",
+        "telephone": "+1-925-980-2245"
+      },
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@id": "https://propelgroup.ai/ai/#service"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@id": "https://propelgroup.ai/bookkeeping/#service"
+          }
+        }
+      ],
+      "telephone": "+1-925-980-2245",
+      "areaServed": [
+        {
+          "@type": "Place",
+          "name": "San Francisco Bay Area"
+        },
+        {
+          "@type": "Place",
+          "name": "Worldwide (remote)"
+        }
+      ],
+      "founder": {
+        "@id": "https://propelgroup.ai/#founder"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://propelgroup.ai/#founder",
+      "name": "Ed Costello",
+      "jobTitle": "Founder",
+      "sameAs": [
+        "https://www.linkedin.com/in/ecostello"
+      ],
+      "worksFor": {
+        "@id": "https://propelgroup.ai/#organization"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://propelgroup.ai/#website",
+      "url": "https://propelgroup.ai/",
+      "name": "Propel Group",
+      "publisher": {
+        "@id": "https://propelgroup.ai/#organization"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://propelgroup.ai/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does Propel Group do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Propel Group, LLC offers two services built to work together: business consulting that streamlines processes and workflows, including AI and automation, and monthly bookkeeping that keeps your finances accurate, current, and ready for decisions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who does Propel Group work with?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Growing companies that want faster, more reliable workflows, cleaner books, or both. Propel Group is based in the San Francisco Bay Area and works with clients remotely worldwide."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I hire Propel Group for just one service?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. You can work with us on business consulting, bookkeeping, or both. Clean books make better automation possible, and automation helps keep books clean, so many clients use both."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does an engagement with Propel Group start?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In four steps: a conversation about where the friction is, an assessment of your workflows, books, or both, a plan with a clear scope, timeline, and fee, and then an ongoing partnership with regular check-ins and reporting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I contact Propel Group?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Email info@propelgroup.ai or call +1 925-980-2245 and tell us a little about your business and which service you're interested in. We follow up within one business day."
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
 </head>
 
 <body class="page-home">
@@ -174,6 +309,35 @@
         </div>
     </section>
 
+    <!-- FAQ (mirrors FAQPage structured data in <head>; keep the two in sync) -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>What does Propel Group do?</summary>
+                    <p>Propel Group, LLC offers two services built to work together: business consulting that streamlines processes and workflows, including AI and automation, and monthly bookkeeping that keeps your finances accurate, current, and ready for decisions.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Who does Propel Group work with?</summary>
+                    <p>Growing companies that want faster, more reliable workflows, cleaner books, or both. Propel Group is based in the San Francisco Bay Area and works with clients remotely worldwide.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Can I hire Propel Group for just one service?</summary>
+                    <p>Yes. You can work with us on business consulting, bookkeeping, or both. Clean books make better automation possible, and automation helps keep books clean, so many clients use both.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>How does an engagement with Propel Group start?</summary>
+                    <p>In four steps: a conversation about where the friction is, an assessment of your workflows, books, or both, a plan with a clear scope, timeline, and fee, and then an ongoing partnership with regular check-ins and reporting.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>How do I contact Propel Group?</summary>
+                    <p>Email info@propelgroup.ai or call +1 925-980-2245 and tell us a little about your business and which service you&#x27;re interested in. We follow up within one business day.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact -->
     <section id="contact" class="contact-section">
         <div class="container">
@@ -202,6 +366,9 @@
             <div>
                 <a href="./" class="logo">PropelGroup<span class="mono accent">.ai</span></a>
                 <p class="footer-tag">Forward Together.</p>
+                <p class="footer-meta">San Francisco Bay Area &middot; Remote worldwide<br>
+                    <a href="tel:+19259802245">+1 925-980-2245</a> &middot;
+                    <a href="mailto:info@propelgroup.ai">info@propelgroup.ai</a></p>
             </div>
             <div class="footer-links">
                 <a href="ai/">Consulting</a>

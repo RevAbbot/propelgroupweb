@@ -1,0 +1,30 @@
+# Propel Group — https://propelgroup.ai
+# All search engines and AI assistants are welcome to crawl and cite this site.
+# Old page copies (index-old.html, index-ai-original.html) carry a noindex tag instead of a Disallow, so crawlers can see it.
+
+User-agent: *
+Allow: /
+Disallow: /deploy/
+Disallow: /brand/
+Disallow: /tasks/
+
+# AI search and assistant crawlers (explicitly allowed)
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Applebot
+User-agent: Applebot-Extended
+User-agent: Bingbot
+User-agent: DuckAssistBot
+Allow: /
+Disallow: /deploy/
+Disallow: /brand/
+Disallow: /tasks/
+
+Sitemap: https://propelgroup.ai/sitemap.xml

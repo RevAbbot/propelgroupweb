@@ -1,0 +1,19 @@
+# Propel Group
+
+> Propel Group, LLC helps growing companies run better with two services built to work together: business consulting that streamlines processes and workflows (including AI adoption, automation, and governance), and monthly bookkeeping that keeps finances accurate, current, and ready for decisions. Clients can use one service or both. Based in the San Francisco Bay Area; works with clients remotely worldwide. Founded by Ed Costello. Contact: info@propelgroup.ai (reply within one business day).
+
+## Services
+
+- [Business Consulting](https://propelgroup.ai/ai/): Strategy aligned to business objectives, governance and ethics guardrails for safe AI adoption, implementation from proof of concept to production, process and workflow automation, and training for leaders and teams. Engagements follow four steps: Audit, Strategy, Governance, Scale. Each starts by defining the problem, the approach, and a measurable expected result.
+- [Bookkeeping](https://propelgroup.ai/bookkeeping/): Monthly bookkeeping and close; bank, credit card, and loan reconciliations; accounts payable and receivable; P&L, balance sheet, and cash flow reporting; catch-up and cleanup; year-end handoff to your CPA. Plans: Essentials, Growth, and Cleanup, quoted on transaction volume and complexity.
+
+## How we work
+
+- [Overview](https://propelgroup.ai/): Conversation, assessment of workflows and/or books, a plan with clear scope, timeline, and fee, then an ongoing partnership with regular check-ins and reporting.
+
+## Contact
+
+- Email: info@propelgroup.ai
+- Phone: +1 925-980-2245
+- Location: San Francisco Bay Area; remote worldwide
+- Founder: [Ed Costello on LinkedIn](https://www.linkedin.com/in/ecostello)

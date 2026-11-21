@@ -8,6 +8,21 @@
     <meta name="description"
         content="Accurate, on-time bookkeeping for growing businesses: monthly close, reconciliations, AP/AR, and clear financial reporting from Propel Group.">
 
+    <link rel="canonical" href="https://propelgroup.ai/bookkeeping/">
+
+    <!-- Social / link previews -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Propel Group">
+    <meta property="og:title" content="Bookkeeping | Propel Group">
+    <meta property="og:description" content="Accurate, on-time bookkeeping for growing businesses: monthly close, reconciliations, AP/AR, and clear financial reporting from Propel Group.">
+    <meta property="og:url" content="https://propelgroup.ai/bookkeeping/">
+    <meta property="og:image" content="https://propelgroup.ai/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Propel Group: Business Consulting &amp; Bookkeeping">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://propelgroup.ai/images/og-image.png">
+
     <!-- Icons -->
     <link rel="icon" href="../favicon.ico" sizes="any">
     <link rel="icon" href="../favicon.svg" type="image/svg+xml">
@@ -21,10 +36,123 @@
         rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="../css/style.css?v=20261118">
+    <link rel="stylesheet" href="../css/style.css?v=20261120b">
 
     <!-- Scripts (Defer) -->
     <script src="../js/main.js?v=20261118" defer></script>
+    <!-- Structured data -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://propelgroup.ai/bookkeeping/#service",
+      "name": "Bookkeeping",
+      "serviceType": "Bookkeeping",
+      "url": "https://propelgroup.ai/bookkeeping/",
+      "provider": {
+        "@id": "https://propelgroup.ai/#organization"
+      },
+      "description": "Accurate, on-time bookkeeping for growing businesses: monthly close, reconciliations, AP/AR, and clear financial reporting from Propel Group.",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Bookkeeping plans",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Essentials",
+            "description": "Monthly categorization and reconciliation, monthly P&L and balance sheet, year-end CPA handoff."
+          },
+          {
+            "@type": "Offer",
+            "name": "Growth",
+            "description": "Everything in Essentials plus accounts payable and receivable, cash flow reporting, and a monthly review call."
+          },
+          {
+            "@type": "Offer",
+            "name": "Cleanup",
+            "description": "One-time catch-up for prior months or years, account reconciliation, and transition to monthly service."
+          }
+        ]
+      },
+      "areaServed": [
+        {
+          "@type": "Place",
+          "name": "San Francisco Bay Area"
+        },
+        {
+          "@type": "Place",
+          "name": "Worldwide (remote)"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://propelgroup.ai/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Bookkeeping",
+          "item": "https://propelgroup.ai/bookkeeping/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://propelgroup.ai/bookkeeping/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What bookkeeping services does Propel Group offer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Monthly bookkeeping and close, bank, credit card, and loan reconciliations, accounts payable and receivable, financial reporting (P&L, balance sheet, and cash flow), catch-up and cleanup of past periods, and a tax-ready handoff to your CPA at year end."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "My books are months behind. Can you help?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Our Cleanup service is a one-time project that brings past-due books current, reconciles your accounts, and transitions you smoothly to monthly service."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does bookkeeping cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Every engagement is quoted based on transaction volume and complexity. There are three levels of support: Essentials, Growth, and Cleanup. Email info@propelgroup.ai for a quote."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work with my CPA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We deliver organized, reconciled books to your CPA at year end so tax season is never a scramble."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does onboarding work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Review (we assess where your books stand today), Onboard (connect accounts and set up your chart of accounts), Clean Up (bring past periods current), and Close Monthly (reconciled books and reports every month)."
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
 </head>
 
 <body class="page-books">
@@ -221,6 +349,35 @@
         </div>
     </section>
 
+    <!-- FAQ (mirrors FAQPage structured data in <head>; keep the two in sync) -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>What bookkeeping services does Propel Group offer?</summary>
+                    <p>Monthly bookkeeping and close, bank, credit card, and loan reconciliations, accounts payable and receivable, financial reporting (P&amp;L, balance sheet, and cash flow), catch-up and cleanup of past periods, and a tax-ready handoff to your CPA at year end.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>My books are months behind. Can you help?</summary>
+                    <p>Yes. Our Cleanup service is a one-time project that brings past-due books current, reconciles your accounts, and transitions you smoothly to monthly service.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>How much does bookkeeping cost?</summary>
+                    <p>Every engagement is quoted based on transaction volume and complexity. There are three levels of support: Essentials, Growth, and Cleanup. Email info@propelgroup.ai for a quote.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Do you work with my CPA?</summary>
+                    <p>Yes. We deliver organized, reconciled books to your CPA at year end so tax season is never a scramble.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>How does onboarding work?</summary>
+                    <p>Review (we assess where your books stand today), Onboard (connect accounts and set up your chart of accounts), Clean Up (bring past periods current), and Close Monthly (reconciled books and reports every month).</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
     <!-- Cross-sell -->
     <section class="cross-sell">
         <div class="container">
@@ -240,6 +397,9 @@
             <div>
                 <a href="../" class="logo">PropelGroup<span class="mono accent">.ai</span></a>
                 <p class="footer-tag">Forward Together.</p>
+                <p class="footer-meta">San Francisco Bay Area &middot; Remote worldwide<br>
+                    <a href="tel:+19259802245">+1 925-980-2245</a> &middot;
+                    <a href="mailto:info@propelgroup.ai">info@propelgroup.ai</a></p>
             </div>
             <div class="footer-links">
                 <a href="../ai/">Consulting</a>

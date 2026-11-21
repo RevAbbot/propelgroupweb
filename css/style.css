@@ -1236,3 +1236,73 @@ a.btn-audit {
         transform: none;
     }
 }
+
+/* FAQ */
+.faq-section {
+    padding: 6rem 0;
+    background: var(--bg-dark);
+}
+
+.faq-list {
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 1.25rem 0;
+}
+
+.faq-item summary {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "+";
+    flex: 0 0 auto;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--accent-cyan);
+}
+
+.faq-item[open] summary::after {
+    content: "\2212";
+}
+
+.faq-item p {
+    margin-top: 0.75rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.result-note {
+    margin-top: 0.75rem;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.footer-meta {
+    margin-top: 0.75rem;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+.footer-meta a {
+    color: var(--text-secondary);
+    text-decoration: none;
+}
+
+.footer-meta a:hover {
+    color: var(--text-primary);
+}
