@@ -38,7 +38,7 @@
     <link rel="stylesheet" href="../css/style.css?v=20261120b">
 
     <!-- Scripts (Defer) -->
-    <script src="../js/main.js?v=20261118" defer></script>
+    <script src="../js/main.js?v=20261120" defer></script>
     <!-- Structured data -->
     <script type="application/ld+json">
 {
@@ -321,19 +321,19 @@
             <div class="calculator-ui">
                 <div>
                     <div class="input-group">
-                        <label for="team-size">Team Size: <span id="team-size-val">50</span></label>
-                        <input type="range" id="team-size" min="10" max="1000" value="50">
+                        <label for="team-size">People doing repetitive work: <span id="team-size-val">10</span></label>
+                        <input type="range" id="team-size" min="1" max="250" value="10">
                     </div>
                     <div class="input-group">
-                        <label for="task-count">Avg. Monthly Tasks: <span id="task-count-val">500</span></label>
-                        <input type="range" id="task-count" min="100" max="10000" value="500">
+                        <label for="hours-week">Hours each spends on it per week: <span id="hours-week-val">5</span></label>
+                        <input type="range" id="hours-week" min="1" max="20" value="5">
                     </div>
                 </div>
                 <div class="result-display">
                     <h3>Estimated Hours Saved/Year</h3>
-                    <div class="result-number" id="saved-hours">12,000</div>
-                    <p class="result-sub">Equivalent to <span id="roi-val">$600k</span> in efficiency gains.</p>
-                    <p class="result-note">Illustrative estimate only, not a quote. Assumes each team member handles the monthly task count shown, one hour per task, with 20% of that time saved, at a $50/hour loaded rate.</p>
+                    <div class="result-number" id="saved-hours">600</div>
+                    <p class="result-sub">Equivalent to <span id="roi-val">$30k</span> in efficiency gains.</p>
+                    <p class="result-note">Illustrative estimate, not a quote. Assumes 25% of repetitive work time is saved, 48 working weeks a year, at $50/hour.</p>
                 </div>
             </div>
         </div>

@@ -78,9 +78,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Calculator Logic
     const teamSizeInput = document.getElementById('team-size');
-    const taskCountInput = document.getElementById('task-count');
+    const hoursWeekInput = document.getElementById('hours-week');
     const teamSizeVal = document.getElementById('team-size-val');
-    const taskCountVal = document.getElementById('task-count-val');
+    const hoursWeekVal = document.getElementById('hours-week-val');
     const savedHoursDisplay = document.getElementById('saved-hours');
     const roiValDisplay = document.getElementById('roi-val');
 
@@ -88,19 +88,22 @@ document.addEventListener('DOMContentLoaded', () => {
         if(!teamSizeInput) return;
         
         const teamSize = parseInt(teamSizeInput.value);
-        const taskCount = parseInt(taskCountInput.value);
+        const hoursWeek = parseInt(hoursWeekInput.value);
         
         teamSizeVal.innerText = teamSize;
-        taskCountVal.innerText = taskCount;
+        hoursWeekVal.innerText = hoursWeek;
         
-        // Simple logic: 20% efficiency gain per person on tasks * 12 months
-        // Assume task takes 1 hour for simplicity
-        const hoursSaved = Math.floor(teamSize * taskCount * 0.2 * 12);
-        // $50/hr average loaded rate (placeholder)
-        const moneySaved = hoursSaved * 50;
+        // Keep these in sync with the note under the result in ai/index.html
+        const WEEKS_PER_YEAR = 48;
+        const SHARE_SAVED = 0.25;
+        const HOURLY_RATE = 50;
+        const hoursSaved = Math.round(teamSize * hoursWeek * WEEKS_PER_YEAR * SHARE_SAVED);
+        const moneySaved = hoursSaved * HOURLY_RATE;
         const moneyLabel = moneySaved >= 1e6
             ? '$' + (moneySaved / 1e6).toFixed(1) + 'M'
-            : '$' + Math.round(moneySaved / 1e3).toLocaleString() + 'k';
+            : moneySaved >= 1e3
+                ? '$' + Math.round(moneySaved / 1e3).toLocaleString() + 'k'
+                : '$' + moneySaved.toLocaleString();
 
         savedHoursDisplay.innerText = hoursSaved.toLocaleString();
         roiValDisplay.innerText = moneyLabel;
@@ -108,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if(teamSizeInput) {
         teamSizeInput.addEventListener('input', updateCalculator);
-        taskCountInput.addEventListener('input', updateCalculator);
+        hoursWeekInput.addEventListener('input', updateCalculator);
         updateCalculator();
     }
 
